@@ -13,8 +13,8 @@
             <button id="submitApiKey">Submit</button>
         </form>
 
-        <script>
-            let rootPath = "https://mysite.itvarsity.org/api/ContactBook/";
+     <script>
+            let rootPath = "https://mysite.itvarsity.org/api/Contactbook/";
             document.getElementById("submitApiKey").addEventListener('click', setApiKey);
 
             function setApiKey(e){
@@ -35,6 +35,9 @@
                     }
                 })
             }
+            restoreApiKey("myApiKey").then(() => {
+            // done
+            });
         </script>
     </body>
 </html>
